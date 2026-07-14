@@ -46,7 +46,7 @@ async def generate_quiz(data: QuizRequest):
                 {"role": "system", "content": "You are a quiz generator. Output ONLY valid JSON."},
                 {"role": "user", "content": prompt}
             ],
-            model="llama3-8b-8192", # Groq ka fast model
+            model="llama-3.1-8b-instant", # Groq ka fast model
             response_format={"type": "json_object"}
         )
         
